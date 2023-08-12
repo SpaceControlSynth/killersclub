@@ -1,0 +1,83 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpaper-house.com/data/out/8/wallpaper2you_261064.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+#logo {
+    width: 500px;
+    height: 100px;
+    transition: opacity 0.5s;
+}
+
+#logo:hover {
+    opacity: 0;
+}
+
+/* Secciones */
+.intro {
+    text-align: center;
+    padding: 50px 0;
+    color: rgb(0, 0, 0);
+}
+
+
+.catalog {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.item {
+    border: 1px solid #ff0000;
+    padding: 10px;
+    background-color: rgba(110, 134, 134, 0.8);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.item img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Pie de página */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(240, 58, 58);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.contact a img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .catalog {
+        flex-direction: column;
+        align-items: center;
+    }
+}
